@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_background_selector">
+
+    <TextView
+        android:id="@+id/notif_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- update content label -->
+    <TextView
+        android:id="@+id/notif_upadte"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:autoLink="all"
+        android:textColor="#000" />
+
+    <!-- time of notification label -->
+    <TextView
+        android:id="@+id/notif_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/tabsScrollColor"
+        android:textStyle="bold"
+        android:paddingBottom="6dip"/>
+
+</LinearLayout>

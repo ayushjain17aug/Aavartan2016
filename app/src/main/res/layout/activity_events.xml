@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/windowBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/windowBackground">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/mega"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <com.flaviofaria.kenburnsview.KenBurnsView
+                        android:id="@+id/megaImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/event_mega" />
+
+                    <TextView
+                        android:id="@+id/megaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/megaImage"
+                        android:layout_alignTop="@+id/megaImage"
+                        android:layout_alignRight="@+id/megaImage"
+                        android:layout_alignBottom="@+id/megaImage"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="Mega Events"
+                        android:textSize="30dp"
+                        android:textColor="@color/eventsText"
+                        android:textStyle="bold"
+                        android:shadowColor="#fff"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="9"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mega"
+                    android:id="@+id/challenges"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <com.flaviofaria.kenburnsview.KenBurnsView
+                        android:id="@+id/challengesImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/events_challenges" />
+
+                    <TextView
+                        android:id="@+id/challengesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/challengesImage"
+                        android:layout_alignTop="@+id/challengesImage"
+                        android:layout_alignRight="@+id/challengesImage"
+                        android:layout_alignBottom="@+id/challengesImage"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="Challenges"
+                        android:textSize="30dp"
+                        android:textColor="@color/eventsText"
+                        android:textStyle="bold"
+                        android:shadowColor="#fff"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="9" />
+                </RelativeLayout>
+                    <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/challenges"
+                        android:id="@+id/knowledge"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <com.flaviofaria.kenburnsview.KenBurnsView
+                            android:id="@+id/knowledgeImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:src="@drawable/event_knowledge" />
+
+                        <TextView
+                            android:id="@+id/knowledgeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/knowledgeImage"
+                            android:layout_alignTop="@+id/knowledgeImage"
+                            android:layout_alignRight="@+id/knowledgeImage"
+                            android:layout_alignBottom="@+id/knowledgeImage"
+                            android:layout_margin="1dp"
+                            android:gravity="center"
+                            android:text="Knowledge Boosters"
+                            android:textSize="30dp"
+                            android:textColor="@color/eventsText"
+                            android:textStyle="bold"
+                            android:shadowColor="#fff"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="9" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/knowledge"
+                        android:id="@+id/online"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+
+                        <com.flaviofaria.kenburnsview.KenBurnsView
+                            android:id="@+id/onlineImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:src="@drawable/event_online" />
+
+                        <TextView
+                            android:id="@+id/onlineText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/onlineImage"
+                            android:layout_alignTop="@+id/onlineImage"
+                            android:layout_alignRight="@+id/onlineImage"
+                            android:layout_alignBottom="@+id/onlineImage"
+                            android:layout_margin="1dp"
+                            android:gravity="center"
+                            android:text="Online Events"
+                            android:textSize="30dp"
+                            android:textColor="@color/eventsText"
+                            android:textStyle="bold"
+                            android:shadowColor="#fff"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="9"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:name="com.technocracy.app.aavartan.model.FragmentDrawer"
+            android:layout_width="@dimen/nav_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer"
+            tools:layout="@layout/fragment_navigation_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>
